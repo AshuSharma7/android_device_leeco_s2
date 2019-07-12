@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+DEVICE_PATH := device/leeco/s2
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := s2
 
@@ -66,7 +67,7 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
-
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
 RECOVERY_VARIANT := twrp
 TW_THEME := portrait_hdpi
 BOARD_HAS_NO_REAL_SDCARD := true
